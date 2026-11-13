@@ -4,10 +4,8 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name (set in params.yaml under hugoblox.branding.name)
-title: ''
-# Website URL
-baseURL: 'https://example.com/'
-
+title: 'Afnan Ahmad | Digital Marketer'
+baseURL: 'https://afnan-portfolio-io.netlify.app/'
 ############################
 ## LANGUAGE
 ############################
