@@ -25,8 +25,9 @@ hugoblox:
       colors_dark: {}
 
   # TYPOGRAPHY
+   # TYPOGRAPHY
   typography:
-    pack: "academic"
+    pack: "modern"
 
   # LAYOUT
   layout:
