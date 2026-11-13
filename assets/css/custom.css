@@ -1,0 +1,29 @@
+
+/* Global typography */
+body {
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.7;
+}
+
+/* Main headings */
+h1, h2, h3 {
+  color: #F5F5FA;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+/* Paragraph readability */
+p, li {
+  line-height: 1.8;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Consistent transitions */
+a, button {
+  transition: all 0.25s ease;
+}
