@@ -27,3 +27,36 @@ html {
 a, button {
   transition: all 0.25s ease;
 }
+
+/* Section heading alignment */
+main h2 {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  margin-bottom: 16px;
+}
+
+/* Section subtitles */
+main h2 + p {
+  text-align: center;
+  color: #A8AABC;
+  margin-bottom: 32px;
+}
+
+/* Content width and readability */
+main p,
+main li {
+  line-height: 1.8;
+}
+
+/* Better section spacing */
+main section {
+  scroll-margin-top: 90px;
+}
+
+/* Smooth hover transitions */
+a,
+button {
+  transition: all 0.25s ease;
+}
+
