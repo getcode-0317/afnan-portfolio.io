@@ -13,15 +13,16 @@ hugoblox:
       twitter: ""
 
   # THEME
+    # THEME
   theme:
-  mode: dark
-  pack: "default"
-  colors:
-    primary: "#8B5CF6"
-    secondary: "#25204A"
-    neutral: "#64748B"
-    colors_light: {}
-    colors_dark: {}
+    mode: dark
+    pack: "default"
+    colors:
+      primary: "#8B5CF6"
+      secondary: "#25204A"
+      neutral: "#64748B"
+      colors_light: {}
+      colors_dark: {}
 
   # TYPOGRAPHY
   typography:
