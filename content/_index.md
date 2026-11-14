@@ -6,28 +6,26 @@ date: 2026-11-13
 type: landing
 
 sections:
+ 
   # HERO / INTRODUCTION
-  - block: resume-biography-3
+  - block: dev-hero
+    id: hero
     content:
       username: me
-      text: ''
-      button:
-        text: "Let's Work Together"
-        url: "#contact"
-      headings:
-        about: ''
-        education: ''
-        interests: ''
+      greeting: "Hello, I'm"
+      tagline: "Digital Marketer | SEO & Paid Advertising"
+      bio: "I help businesses grow their online presence through Social Media Handling/Management (SMM) and Paid Advertising across Google, Meta, and TikTok, and SEO strategies, link building, and guest posting, for better performance "
+      show_scroll_indicator: true
+      cta_buttons:
+        - text: "View My Work"
+          url: "#projects"
+          icon: arrow-down
+        - text: "Let's Work Together"
+          url: "#contact"
+          icon: envelope
     design:
-      background:
-        gradient_mesh:
-          enable: true
-      name:
-        size: xl
-      avatar:
-        size: large
-        shape: rounded
-
+      style: split
+      avatar_shape: rounded
   # ABOUT ME
   - block: markdown
     id: about
