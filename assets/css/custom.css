@@ -1,62 +1,222 @@
 
-/* Global typography */
+/* =========================================
+   GLOBAL THEME
+========================================= */
+
+:root {
+  --bg-main: #080B14;
+  --bg-card: #10182B;
+  --bg-card-hover: #17223A;
+  --accent: #8065D9;
+  --accent-hover: #957FE8;
+  --heading: #F5F5FA;
+  --text-main: #D1D5E0;
+  --text-muted: #A8AABC;
+  --border-color: rgba(128, 101, 217, 0.20);
+}
+
+/* =========================================
+   BODY & TYPOGRAPHY
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
   font-family: Inter, Arial, sans-serif;
   line-height: 1.7;
 }
 
-/* Main headings */
-h1, h2, h3 {
-  color: #F5F5FA;
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading);
   font-weight: 700;
   letter-spacing: -0.03em;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
-/* Paragraph readability */
 p, li {
+  color: var(--text-main);
   line-height: 1.8;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+small,
+.text-muted {
+  color: var(--text-muted);
 }
 
-/* Consistent transitions */
-a, button {
-  transition: all 0.25s ease;
+/* =========================================
+   NAVIGATION BAR
+========================================= */
+
+.navbar {
+  background: rgba(8, 11, 20, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
 }
 
-/* Section heading alignment */
+.navbar .nav-link {
+  color: var(--text-main);
+  transition: color 0.25s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--accent-hover);
+}
+
+.navbar-brand {
+  color: var(--heading);
+  font-weight: 700;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+  color: var(--accent-hover);
+  transition: color 0.25s ease;
+}
+
+a:hover {
+  color: #B5A5FF;
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
 main h2 {
   text-align: center;
   font-weight: 700;
   letter-spacing: -0.035em;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
-/* Section subtitles */
 main h2 + p {
   text-align: center;
-  color: #A8AABC;
+  color: var(--text-muted);
   margin-bottom: 32px;
 }
 
-/* Content width and readability */
-main p,
-main li {
-  line-height: 1.8;
-}
-
-/* Better section spacing */
 main section {
   scroll-margin-top: 90px;
 }
 
-/* Smooth hover transitions */
+/* =========================================
+   CARDS & CONTENT BOXES
+========================================= */
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  transition: transform 0.25s ease,
+              border-color 0.25s ease,
+              background-color 0.25s ease;
+}
+
+.card:hover {
+  background-color: var(--bg-card-hover);
+  border-color: rgba(128, 101, 217, 0.55);
+  transform: translateY(-4px);
+}
+
+.card-title {
+  color: var(--heading);
+}
+
+.card-body {
+  color: var(--text-main);
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #FFFFFF;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  color: var(--accent-hover);
+  border-color: var(--accent);
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #FFFFFF;
+}
+
+/* =========================================
+   IMAGES
+========================================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+/* =========================================
+   SKILLS & BADGES
+========================================= */
+
+.badge {
+  background-color: rgba(128, 101, 217, 0.15);
+  color: #C6B8FF;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  background-color: #070A12;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+}
+
+/* =========================================
+   GENERAL SPACING & EFFECTS
+========================================= */
+
 a,
 button {
   transition: all 0.25s ease;
 }
 
+main p,
+main li {
+  line-height: 1.8;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: #FFFFFF;
+}
